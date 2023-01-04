@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            muscle factory gym
+        </title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: -6px;
+                padding: 6px;
+            }
+            .header{
+                /*background-color:rgb(180, 160, 97);
+                border:1px solid grey;*/
+                height: 80px;
+                width:100%;
+                background-color: antiquewhite;
+            
+            }
+            .left{
+               /* border: 2px solid red;*/
+                left: 20px;
+                display: inline-block;
+                top: 15px;
+                position: absolute;
+                text-align: center;
+                text-transform: uppercase;
+               
+                
+            }
+            .left img{
+                width: 40px;
+                height:40px;
+            }
+           .mid{
+            
+                margin: 12px auto;
+                width: 0px;
+            
+            }
+            .right{
+                /*border: 2px solid red;*/
+                position:absolute;
+                right:135px;
+                top:25px;
+             display: inline-block;
+            
+            }
+            .navbar{
+                display: inline-block;
+            }
+            .navbar li{
+                display: inline-block;
+                font-size: 25px;
+            }
+            .navbar li a{
+                text-decoration: none;
+               padding: 30px 25px;
+               color: black;
+
+            }
+            .container{
+                background-image:url(firstpic.jpg);
+                background-size: cover;
+                height: 1000px;
+                width: 100%;
+                background-color: black;
+            }
+            .quotes1{
+                color:red;
+                font-family: 'Oswald', sans-serif;
+                position: absolute;
+                display: inline;
+                left: 200px;
+                top: 250px;
+                font-size: 13px;
+                letter-spacing: 1.5em;
+                line-height: 2.4em;
+                
+            }
+            .quotes2{
+                color:chartreuse;
+                font-family:  'Oswald', sans-serif;
+                left: 200px;
+                top: 300px;
+                font-size: 7vw;
+                letter-spacing: 0.35em;
+                line-height: 1.2em;
+                position: absolute;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+            .quotes3{
+                top: 620px;
+                left: 620px;
+                color: white;
+                text-decoration: underline red;
+                position: absolute;
+                text-transform: uppercase;
+                letter-spacing: 0.35em;
+                
+
+            }
+            .form1{
+                background-color: red;
+                position: absolute;
+                right: 0px;
+                top: 1092px;
+                height: 494px;
+                width: 500px;
+            }
+            .trial{
+                color: yellow;
+                text-transform: uppercase;
+                left: 65px;
+                top: 90px;
+                position: absolute;
+                font-weight: 600;
+
+            }
+            .form2{
+                position: absolute;
+                left: 150px;
+                top: 150px;
+            
+            }
+            .form3{
+                background-image: url(img4.jpg);
+                background-color: white;
+                height: 500px;
+                width: 100%;
+                background-color: black;
+            }
+            .form3no1{
+                position: absolute;
+                left: 300px;
+                letter-spacing: 0.3em;
+                font-weight: 1000px;
+                color: white;
+                font-family:'Oswald', sans-serif ;
+                font-weight: 700;
+            }
+            .third{
+                background-image: url(coverpic.jpg);
+                height: 1000px;
+                width: 100%;
+                background-size: cover;
+                background-color: white;
+            }
+            .third1{
+                color:chartreuse ;
+                position: absolute;
+                left:450px;
+                top: 2100px;
+                font-style: italic ;
+                font-family:'Oswald', sans-serif ;
+                font-size: 80px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                font-weight: 600;
+
+            }
+            .third2{
+                color:yellowgreen;
+                position: absolute;
+                right: 300px;
+                top: 2050px;
+                font-style: italic ;
+                font-family:'Oswald', sans-serif ;
+                font-size: 20px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                font-weight: 800;
+            }
+            .third3{
+                position: absolute;
+                right: 300px;
+                top: 2250px;
+                font-style: italic ;
+                font-family:'Oswald', sans-serif ;
+                font-size: 20px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                font-weight: 800;
+                color:cyan;
+            }
+            .fourth{
+                text-transform: uppercase;
+                font-style: italic;
+                height: 400px;
+                
+            }
+            .fourth1{
+                text-transform: uppercase;
+                font-style: italic;
+                left: 400px;
+                top: 2650px;
+                position: absolute;
+                font-size:25px;
+                font-weight: bolder;
+                letter-spacing: 0.2em;
+               
+            }
+            .fourth2{
+                text-transform: uppercase;
+                font-style: italic;
+                left: 350px;
+                top: 2700px;
+                position: absolute;
+                font-size:70px;
+                letter-spacing: 0.2em;
+                font-weight: bolder;
+
+            }
+            .fourth3{
+                text-transform: uppercase;
+                font-style: italic;
+                left: 450px;
+                top: 2800px;
+                position: absolute;
+                font-size:70px;
+                letter-spacing: 0.2em;
+                font-weight:bolder;
+            }
+            article{
+                border: 1px solid blue;
+                background-color:rgb(230, 72, 10);
+                height: 1200px;
+                text-transform: uppercase;
+                font-style: italic;
+            
+            }
+            .fifth1{
+                text-transform: uppercase;
+                position: absolute;
+                left: 600px;
+                top: 3100px;
+                color: white;
+                font-size: 50px;
+                font-style: italic;
+                letter-spacing: 0.2em;
+                font-family:'Oswald', sans-serif ;
+                font-weight: bolder;
+            }
+            .fifth2{
+                text-transform: uppercase;
+                position: absolute;
+                left: 680px;
+                top: 3200px;
+                color: white;
+                font-size: 13px;
+                font-style: italic;
+                letter-spacing: 0.2em;
+                font-family:'Oswald', sans-serif ;
+                font-weight: bolder;
+            }
+            .fifth3{
+                color:white;
+                background-color:cadetblue;
+                position: absolute;
+                width: 350px;
+                height: 600px;
+                left: 100px;
+                top: 3400px;
+                background-image: url(img4.jpg);
+                border-radius: 15%;
+
+            }
+            .fifth7{
+                color:white;
+                background-color:cadetblue;
+                position: absolute;
+                width: 350px;
+                height: 600px;
+                left: 600px;
+                top: 3400px;
+                background-image: url(img4.jpg);
+                border-radius: 15%;
+
+            }
+            .fifth8{
+                color:white;
+                background-color:cadetblue;
+                position: absolute;
+                width: 350px;
+                height: 600px;
+                left: 1100px;
+                top: 3400px;
+                background-image: url(img4.jpg);
+                border-radius: 15%;
+
+            }
+            footer{
+                background-image: url(new.jpg);
+                height: 800px;
+                background-size:cover;
+                width: 100%;
+                text-transform: uppercase;
+                font-weight: bolder;
+                background-color:black;
+            }
+            .sixth{
+            color:white;
+                position: absolute;
+                width: 350px;
+                height: 600px;
+                left: 100px;
+                top: 4350px;
+            }
+            .sixth1{
+                color:white;
+                position: absolute;
+                width: 350px;
+                height: 600px;
+                left: 500px;
+                top: 4430px;
+            }
+            .sixth2{
+                color:white;
+                position: absolute;
+                width: 350px;
+                height: 600px;
+                left: 800px;
+                top: 4350px;
+            }
+            .sixth3{
+                color:white;
+                position: absolute;
+                width: 350px;
+                height: 600px;
+                left: 1200px;
+                top: 4350px;
+               
+            }
+        </style>
+    </head>
+    <body >
+         <header class="header">
+            <div class="left" >
+                <img src="logo.jpg"height="30px" width="40px" ><br>
+            <strong style="color: brown; letter-spacing: 0.2em;">muscle factory gym</strong> 
+
+            </div>
+            <div class="mid">
+            
+            </div>
+            <div class="right">
+                 <ul class="navbar"> 
+                <li><a href="">Home</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="gym-project-submit.html">contact</a></li>
+                <li><a href="">about us</a></li>
+                 </ul> 
+                
+            </div>
+         </header>
+         <nav>
+         <div class="container">
+                <h3 class="quotes1">BIGGER.STRONGER.FASTER</h3>
+                <h1 class="quotes2">join the movement</h1>
+                <h3 class="quotes3">join today</h3>
+
+               
+                
+         </div>
+         <div class="form3">
+            <div class="form3no1">
+            <h1 style="color: yellowgreen;">Fitness Program</h1><br><br>
+            <p>Bodybuilding</p><br>
+            <p>Weight-Lifting</p><br>
+            <p>Weight-Loss</p><br>
+            <p>Cardio</p><br>
+            <p>Crossfit</p><br>
+            <p>Yoga</p><br>
+            <p>Athlete Training</p><br><br>
+            <form action="" method="post"> <input type="submit" value="learn more" style="color:black;background-color:white;border:1px solid red; position:absolute;left: 20px;">
+            </form>
+            </div>
+            <div class="form1"> 
+            
+                <h2 class="trial">try for a free trial / join now</h2>
+                <form action="form-submitted-confermation.html" method="" class="form2">
+                  <input type="text" placeholder="full name" required style="text-transform:uppercase" size="30"><br><br>
+                  <input type="email" placeholder="email" required style="text-transform:uppercase"size="30"><br><br>
+                  <input type="tel" placeholder="contact number" required style="text-transform:uppercase"size="30"><br><br><br>
+                  <input type="submit" value="submit" style="background-color: red; color:white; border:1px solid white;text-transform:uppercase; position:absolute;left: 90px;" >
+                  
+                </form>
+                <p style="color: white;position:absolute; top: 350px; left: 250px;">or</p><br>
+                <a href="gym-project-submit.html">  <h2 style="color: yellow;position:absolute; top: 390px; left: 100px; text-transform:uppercase;">schedule an assesment →</h2> </a>          
+           </div>          
+        </div>
+         <div class="third">
+            <h4 class="third2">invest in your health</h4>
+            <h1 class="third1">personal trainer</h1>
+            <h2 class="third3">training by rohit dutta</h2>
+            <form action="gym-project-submit.html" method="post"><input type="submit" value="GET STARTED" style="top: 2350px; position:absolute;right:300px;border-radius: 30px;height:70px;width: 200px;letter-spacing: 0.2em;background-color:rgb(239, 80, 6);font-size:medium;font-weight:bold">
+            </form>
+            </div> 
+        </div>
+        </nav>
+         <section class="fourth">
+        <!-- <div class="fourth"> -->
+            <p class="fourth1">no pain no gain</p>
+            <h1 class="fourth2">real work.</h1>
+            <h1 class="fourth3">real results.</h1>
+
+        <!-- </div> -->
+    </section>
+    <article class="fifth">
+            <h1 class="fifth1">
+                pricing plans
+            </h1>
+            <h3 class="fifth2"><strong> plans according to your goal</strong></h3>
+            <div class="fifth3">
+                <h1 class="fifth4" style="position: absolute; left: 110px; top:20px">standard</h1><br><br><br>
+                <h2 class="fifth5"style="position: absolute; top:70px;">fee structure</h2><br><br><br>
+                <div class="fifth6">
+                <h3>monthly : 500/-</h3>
+                <h3>quaterly : 1400/-</h3>
+                <h3>half-yearly : 2700/-</h3>
+                <h3>yearly : 5000/-</h3>
+                </div>
+                <br><br>
+                <h2 class="fifth5">benefits</h2><br>
+                <div class="fifth6">
+                <h3>workout time : (6 A.M-10 A.M) </h3><h3 style="position: absolute; left: 165px;">(6 P.M-10 P.M)</h3><br><br>
+                <H3>Personal trainer : no</H3>
+                <h3>workout time : 1.5 hours per day</h3>
+                <h3>weekly time : monday to saturday</h3>
+                <form action="gym-project-submit.html" method="post"> <input type="submit" value="get started" style="top: 520px; position:absolute;left:50px;border-radius: 30px;height:55px;width: 200px;letter-spacing: 0.2em;background-color:rgba(206, 158, 114, 0.986);font-size:medium;font-weight:bold;text-transform:uppercase">
+                </form>
+                </div>
+
+            </div>
+            <div class="fifth7">
+                <h1 class="fifth4" style="position: absolute; left: 150px; top:20px">gold</h1><br><br><br>
+                <h2 class="fifth5"style="position: absolute; top:70px;">fee structure</h2><br><br><br>
+                <div class="fifth6">
+                <h3>monthly : 800/-</h3>
+                <h3>quaterly : 2200/-</h3>
+                <h3>half-yearly : 4300/-</h3>
+                <h3>yearly : 8000/-</h3>
+                </div>
+                <br><br>
+                <h2 class="fifth5">benefits</h2><br>
+                <div class="fifth6">
+                <h3>workout time : (6 A.M-10 P.M) </h3>
+                <H3>Personal trainer : no</H3>
+                <h3>workout time : 3 hours per day</h3>
+                <h3>weekly time : monday to saturday</h3>
+                <form action="gym-project-submit.html" method="post"> <input type="submit" value="get started" style="top: 520px; position:absolute;left:50px;border-radius: 30px;height:55px;width: 200px;letter-spacing: 0.2em;background-color:rgba(206, 158, 114, 0.986);font-size:medium;font-weight:bold;text-transform:uppercase">
+                </form>
+                </div>
+
+            </div>
+            <div class="fifth8">
+                <h1 class="fifth4" style="position: absolute; left: 110px; top:20px">platinum</h1><br><br><br>
+                <h2 class="fifth5"style="position: absolute; top:70px;">fee structure</h2><br><br><br>
+                <div class="fifth6">
+                <h3>monthly : 1500/-</h3>
+                <h3>quaterly : 4200/-</h3>
+                <h3>half-yearly : 8000/-</h3>
+                <h3>yearly : 15000/-</h3>
+                </div>
+                <br><br>
+                <h2 class="fifth5">benefits</h2><br>
+                <div class="fifth6">
+                <h3>workout time : (6 A.M-10 P.M) </h3>
+                <H3>Personal trainer : yes</H3>
+                <h3>workout time : according to your need</h3>
+                <h3>weekly time : monday to saturday</h3><br><br>
+                <form action="gym-project-submit.html" method="post"> <input type="submit" value="get started" style="top: 520px; position:absolute;left:50px;border-radius: 30px;height:55px;width: 200px;letter-spacing: 0.2em;background-color:rgba(206, 158, 114, 0.986);font-size:medium;font-weight:bold;text-transform:uppercase">
+                </form>
+                </div>
+
+            </div>
+            
+        </article>
+        <footer>
+            <div class="sixth" >
+                <h1 style="color: yellow;">quick links</h1><br><br>
+                <div style="color:white"><a href="#" style="color: white;">
+                <h4>about us</h4><br><br>
+                <h4>our team</h4><br><br>
+                <h4>careers</h4><br><br>
+                <h4>Testimonials</h4><br><br>
+                <h4>work culture</h4><br><br>
+                <h4>press room</h4><br><br>
+                <h4>promotion</h4><br><br>
+                <h4>events</h4><br><br>
+                <h4>amezing offers</h4><br><br>
+                <h4>group programs</h4></a></div><br>
+            </div>
+            <div class="sixth1">
+                <div style="color:white"><a href="#" style="color: white;">
+                <h4>blogs</h4><br><br>
+                <h4>program</h4><br><br>
+                <h4>gallery</h4><br><br>
+                <h4>franchise</h4><br><br>
+                <h4>advertise with us</h4><br><br>
+                <h4>buy membership now</h4></a></div><br>
+            </div>
+            <div class="sixth2">
+                <h1 style="color: yellow;">news letter</h1><br><br><br>
+                <h4 style="color:white">sign up for our mailing list to get <br><br> latest updates and offers</h4><br><br>
+            <form action="form-submitted-confermation.html" method="post"><input type="email" placeholder="enter your email"><br><br>
+                <input type="submit" value="submit" style="background-color: red; font-weight:bolder;" ></form>
+            </div>
+            <div class="sixth3">
+                <h1 style="color: yellow;">LATEST NEWS</h1><br><br>
+                <div style="color:white;"><a href="#" style="color: white;">
+                <h3 >
+                    7 simple ways to boost your metabolism</h3><br><br><br>
+                    <h3>
+                        7 simple ways to boost your strength</h3><br><br><br>
+                <h3>
+                    7 simple ways to build your muscle</h3></a></div>
+            </div>
+
+        </footer>
+    </body>
+</html>

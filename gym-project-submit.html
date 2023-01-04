@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            reg form
+        </title>
+    </head>
+    <body>
+        <form action="form-submitted-confermation.html" method="post" style="background-color: aqua;">
+            <fieldset>
+                <legend>registration form</legend>
+                <label>first name : </label><input type="text" name="first name" required><br> <br>
+                <label>last name : </label><input type="text" name="last name" required><br><br>
+                <label>user name : </label><input type="text" name="username" required><br><br>
+                <label>password : </label><input type="password" name="password" required><br><br>
+                <label>email : </label><input type="email" name="email" ><br><br>
+                <label>gender : </label>
+                <input type="radio" name="gender" value="male" required>male
+                <input type="radio" name="gender" value="female"required>female
+                <input type="radio" name="gender" value="other" required>other <br> <br>
+                <label>contact number : </label><input type="tel" name="contactnumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="ex=123-123-1234"><br> <br>
+                <input type="submit" value="submit">
+
+            </fieldset>
+        </form>
+    </body>
+</html>
